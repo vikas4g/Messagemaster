@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div>
+      
+    <div class="container">
+        <header>
+            <h1>MESSAGE MASTER</h1>
+            <div class="user-icon">
+                <i class="fas fa-user"></i>
+                <span>ME</span>
+                <div class="dropdown-content">
+                    <a href="https://vikas4g.github.io/-portfolio/" target="_blank">PORTFOLIO</a>
+                    <a href="https://www.behance.net/vktivkti" target="_blank">BEHANCE</a>
+                    <a href="https://github.com/vikas4g" target="_blank">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/vikas-kushwaha-00b85222a/" target="_blank">LINKEDIN</a>
+                </div>
+            </div>
+        </header>
+        <div class="mode-switch">
+            <div class="switch-container">
+                <div class="switch-background"></div>
+                <button id="encryptBtn" class="active">
+                    <i class="fas fa-lock"></i> ENCRYPT
+                </button>
+                <button id="decryptBtn">
+                    <i class="fas fa-unlock"></i> DECRYPT
+                </button>
+            </div>
+        </div>
+        <div class="conversion-type">
+            <select id="conversionType">
+                <option value="binary">BINARY</option>
+                <option value="base64">BASE64</option>
+                <option value="morse">MORSE CODE</option>
+                <option value="aes">AES ENCRYPTION</option>
+            </select>
+            <div class="convert-button-container">
+                <div class="convert-button-background"></div>
+                <button id="convertBtn">CONVERT</button>
+            </div>
+        </div>
+        <textarea id="inputText" placeholder="ENTER MESSAGE"></textarea>
+        <div class="action-buttons">
+            <button id="clearBtn">CLEAR</button>
+            <button id="copyBtn">COPY</button>
+        </div>
+        <textarea id="outputText" placeholder="RESULT" readonly></textarea>
+        <div id="keyInput" class="key-input" style="display: none;">
+            <input type="password" id="aesKey" placeholder="ENTER KEY">
+        </div>
+        <!-- <div class="social-icons">
+            <a href="#" class="icon">GITHUB</a>
+            <a href="#" class="icon">PORTFOLIO</a>
+            <a href="#" class="icon">LINKEDIN</a>
+            <a href="#" class="icon">BEHANCE</a>
+        </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+
+ 
+
+</body>
+</html>
